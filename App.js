@@ -14,7 +14,7 @@ import VGSTextView from './fields/show/text/NativeView';
 import VGSShow from './module/show/VGSShow';
 
 import VGSCollect from './module/collect/VGSCollect';
-import ScanActivity from './module/collect/ScanActivity';
+import ScanActivity from './module/collect/scanner/ScanActivity';
 
 import { DeviceEventEmitter } from 'react-native';
 

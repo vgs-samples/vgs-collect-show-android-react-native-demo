@@ -53,8 +53,7 @@ public class ScanModule extends ReactContextBaseJavaModule {
     @Override
     public Map<String, Object> getConstants() {
         final Map<String, Object> constants = new HashMap<>();
-        constants.put("CARD_NUMBER", ScanActivity.CARD_NUMBER);
-        constants.put("CARD_HOLDER", ScanActivity.CARD_HOLDER);
+        constants.put("cardNumber", ScanActivity.CARD_NUMBER);
 
         return constants;
     }
