@@ -22,7 +22,7 @@ public class MainActivity extends ReactActivity {
 
   @Override
   protected String getMainComponentName() {
-    return "Awesome_Project";
+    return "VGS React Native Demo";
   }
 
   @Override
