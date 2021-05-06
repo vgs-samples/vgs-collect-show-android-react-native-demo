@@ -1,6 +1,12 @@
-## VGS Collect SDK - React Native Demo
+# VGS Collect/Show SDK. React Native Demo.
 
-> **_NOTE:_**  This demo is just an example of how VGS Collect SDK can be integrated into your application. 
+<p align="center">
+    <img src="images/vgs-filled.png" width="200">
+    <img src="images/vgs-revealed.png" width="200">
+</p>
+
+> **_NOTE:_**  This demo is just an example of how VGS Collect SDK can be integrated into your application.
+
 
 ## How to run it?
 
@@ -42,7 +48,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 - Run `restart.sh` script to clear cache and build project on emulator.
 - Make sure you have ``assets`` folder created here ``/android/app/src/main/assets``
 
-**Note:** Please, don't forget to change ``<vault_id>`` to your read ID [here](https://github.com/verygoodsecurity/vgs-collect-android-react-native/blob/master/android/app/src/main/java/com/awesome_project/collect/VGSCollectModule.java#L47) from [VGS Dashboard](https://dashboard.verygoodsecurity.com/dashboard/).
+**Note:** Please, don't forget to change ``<vault_id>`` for [Collect](https://github.com/vgs-samples/vgs-collect-show-android-react-native-demo/blob/master/android/app/src/main/java/com/verygoodsecurity.reactnative/collect/VGSCollectModule.java#L31) and [Show](https://github.com/vgs-samples/vgs-collect-show-android-react-native-demo/blob/master/android/app/src/main/java/com/verygoodsecurity.reactnative/show/VGSShowModule.java#L29) SDKs from [VGS Dashboard](https://dashboard.verygoodsecurity.com/dashboard/).
 
 
 
