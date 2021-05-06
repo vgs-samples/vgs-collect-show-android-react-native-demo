@@ -14,7 +14,6 @@ import VGSTextView from './fields/show/text/NativeView';
 import VGSShow from './module/show/VGSShow';
 
 import VGSCollect from './module/collect/VGSCollect';
-import ScanActivity from './module/collect/scanner/ScanActivity';
 
 import { DeviceEventEmitter } from 'react-native';
 
@@ -50,16 +49,6 @@ export default class App extends  Component<Props> {
         };
 
         VGSShow.submitAsync(data)
-    }
-
-    collectData = () => {
-        NumberVGSEditText.getFieldName((msg) => {
-            ScanActivity.setItem(msg, ScanActivity.CARD_NUMBER);
-        });
-
-        setTimeout( function() {
-            ScanActivity.startActivityForResult();
-        }, 200);
     }
 
     render() {
@@ -109,15 +98,6 @@ export default class App extends  Component<Props> {
                         <Button style={styles.button}
                             title="Submit"
                             onPress={ () => VGSCollect.submitAsync() }
-                        />
-                    </View>
-
-                    <View style={{
-                        marginBottom:20, marginLeft:20, marginRight:20
-                    }}>
-                        <Button style={styles.button}
-                            title="Scan"
-                            onPress={this.collectData}
                         />
                     </View>
 
