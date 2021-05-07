@@ -27,7 +27,7 @@ Go to your <a href="https://dashboard.verygoodsecurity.com/" target="_blank">VGS
 
 ### Step 2
 
-`git clone git@github.com:verygoodsecurity/vgs-collect-show-flutter-demo.git`
+`git clone git@github.com:vgs-samples/vgs-collect-show-android-react-native-demo.git`
 
 
 ### Step 3
