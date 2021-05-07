@@ -5,7 +5,7 @@
     <img src="images/vgs-revealed.png" width="200">
 </p>
 
-> **_NOTE:_**  This demo is just an example of how VGS Collect SDK can be integrated into your application.
+> **_NOTE:_**  This demo is just an example of how VGS Collect SDK and VGS Show SDK can be integrated into your application.
 
 
 ## How to run it?
