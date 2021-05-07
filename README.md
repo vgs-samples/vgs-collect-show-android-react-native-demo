@@ -82,6 +82,10 @@ Running the project
 - Make sure you have ``assets`` folder created here ``/android/app/src/main/assets``
 
 
+### Step 6
+
+Submit and reveal the form then go to the Logs tab on a Dashboard find a request and secure a payload.
+Instruction for this step you can find <a href="https://www.verygoodsecurity.com/docs/getting-started/quick-integration#securing-inbound-connection" target="_blank">here</a>.
 
 
 
