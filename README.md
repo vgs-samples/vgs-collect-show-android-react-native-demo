@@ -10,9 +10,31 @@
 
 ## How to run it?
 
+
+### Step 1
+
+Go to your <a href="https://dashboard.verygoodsecurity.com/" target="_blank">VGS organization</a> and establish <a href="https://www.verygoodsecurity.com/docs/getting-started/quick-integration#securing-inbound-connection" target="_blank">Inbound connection</a>. For this demo you can import pre-built route configuration:
+
+<p align="center">
+<img src="images/dashboard_routs.png" width="600">
+</p>
+
+- Find the **configuration.yaml** file inside the app repository and download it.
+- Go to the **Routes** section on the <a href="https://dashboard.verygoodsecurity.com/" target="_blank">Dashboard</a> page and select the **Inbound** tab.
+- Press **Manage** button at the right corner and select **Import YAML file**.
+- Choose **configuration.yaml** file that you just downloaded and tap on **Save** button to save the route.
+
+
+### Step 2
+
+`git clone git@github.com:verygoodsecurity/vgs-collect-show-flutter-demo.git`
+
+
+### Step 3
+
 Development domain: https://facebook.github.io/react-native/docs/getting-started
 
-### Installing dependencies
+#### Installing dependencies
 
 **Node & Watchman**:
 ```
@@ -41,14 +63,25 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-### Running the project
-- `git clone git@github.com:verygoodsecurity/vgs-collect-android-react-native.git`
-- Open a Terminal and go to the project directory(`./vgs-collect-android-react-native`).
+
+### Step 4
+
+Setup `"<VAULT_ID>"`.
+
+**VGS Collect SDK**. Find [VGSCollectModule.java](https://github.com/vgs-samples/vgs-collect-show-android-react-native-demo/blob/master/android/app/src/main/java/com/verygoodsecurity.reactnative/collect/VGSCollectModule.java#L31) and replace `VAULT_ID` constant with your <a href="https://www.verygoodsecurity.com/docs/terminology/nomenclature#vault" target="_blank">vault id</a>.
+
+**VGS Show SDK**. Find [VGSShowModule.java](https://github.com/vgs-samples/vgs-collect-show-android-react-native-demo/blob/master/android/app/src/main/java/com/verygoodsecurity.reactnative/show/VGSShowModule.java#L29) and replace `VAULT_ID` constant with your <a href="https://www.verygoodsecurity.com/docs/terminology/nomenclature#vault" target="_blank">vault id</a>.
+
+
+### Step 5
+
+Running the project
+- Open a Terminal and go to the project directory.
 - If this is first start - run ``npm install`` command.
 - Run `restart.sh` script to clear cache and build project on emulator.
 - Make sure you have ``assets`` folder created here ``/android/app/src/main/assets``
 
-**Note:** Please, don't forget to change ``<vault_id>`` for [Collect](https://github.com/vgs-samples/vgs-collect-show-android-react-native-demo/blob/master/android/app/src/main/java/com/verygoodsecurity.reactnative/collect/VGSCollectModule.java#L31) and [Show](https://github.com/vgs-samples/vgs-collect-show-android-react-native-demo/blob/master/android/app/src/main/java/com/verygoodsecurity.reactnative/show/VGSShowModule.java#L29) SDKs from [VGS Dashboard](https://dashboard.verygoodsecurity.com/dashboard/).
+
 
 
 
