@@ -1,36 +1,26 @@
 package com.verygoodsecurity.reactnative;
 
-import android.app.Application;
-import android.content.Context;
+import androidx.multidex.MultiDexApplication;
 
-import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-
-import java.lang.reflect.InvocationTargetException;
-import java.util.List;
-import java.util.Arrays;
-import java.util.ArrayList;
-
-import android.app.Activity;
-
-import com.verygoodsecurity.reactnative.show.VGSShowPackage;
-import com.verygoodsecurity.reactnative.show.field.TextViewPackage;
-import com.verygoodsecurity.reactnative.show.VGSShowOnCreateViewInstanceListener;
-
+import com.verygoodsecurity.reactnative.collect.VGSCollectOnCreateViewInstanceListener;
 import com.verygoodsecurity.reactnative.collect.VGSCollectPackage;
 import com.verygoodsecurity.reactnative.collect.field.date.CardExpDatePackage;
 import com.verygoodsecurity.reactnative.collect.field.number.CardNumberPackage;
-import com.verygoodsecurity.reactnative.collect.VGSCollectOnCreateViewInstanceListener;
-
-import android.util.Log;
-
 import com.verygoodsecurity.reactnative.collect.scanner.ScanPackage;
+import com.verygoodsecurity.reactnative.show.VGSShowOnCreateViewInstanceListener;
+import com.verygoodsecurity.reactnative.show.VGSShowPackage;
+import com.verygoodsecurity.reactnative.show.field.TextViewPackage;
 
-public class MainApplication extends Application implements ReactApplication {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class MainApplication extends MultiDexApplication implements ReactApplication {
 
     private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
         @Override
@@ -60,7 +50,7 @@ public class MainApplication extends Application implements ReactApplication {
         VGSShowPackage show = new VGSShowPackage();
         VGSShowOnCreateViewInstanceListener listener = show.getListener();
 
-        ReactPackage[] array = new ReactPackage[] {
+        ReactPackage[] array = new ReactPackage[]{
                 new TextViewPackage(listener),
                 show
         };
