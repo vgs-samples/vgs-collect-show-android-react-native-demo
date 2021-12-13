@@ -64,7 +64,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 **Specify Android SDK directory**
 
-Create `local.properties` file in `~/android` folder and specify `sdk.dir` property.
+Create `local.properties` file in `~/vgs-collect-show-android-react-native-demo/android` folder and specify `sdk.dir` property.
 
 ```
 ## This file must *NOT* be checked into Version Control Systems,
