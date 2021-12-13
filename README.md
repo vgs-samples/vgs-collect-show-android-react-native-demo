@@ -62,7 +62,19 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
+**Specify Android SDK directory**
 
+Create `local.properties` file in `~/android` folder and specify `sdk.dir` property.
+
+```
+## This file must *NOT* be checked into Version Control Systems,
+# as it contains information specific to your local configuration.
+#
+# Location of the SDK. This is only used by Gradle.
+# For customization when using a Version Control System, please read the
+# header note.
+sdk.dir=<ANDROID_SDK_DIRECTORY_PATH>
+```
 
 ### Step 4
 
