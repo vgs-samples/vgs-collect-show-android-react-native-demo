@@ -180,19 +180,19 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
     // Node modules
     implementation "com.facebook.react:react-native:+"
 
     // VGS Collect
-    implementation 'com.verygoodsecurity:vgscollect:1.6.18'
+    implementation 'com.verygoodsecurity:vgscollect:1.6.19'
     implementation 'com.verygoodsecurity:adapter-cardio:1.0.2'
 
     // VGS Show
-    implementation 'com.verygoodsecurity:vgsshow:1.1.0'
+    implementation 'com.verygoodsecurity:vgsshow:1.2.0'
 
     implementation "androidx.multidex:multidex:2.0.1"
 
