@@ -32,36 +32,11 @@ Go to your <a href="https://dashboard.verygoodsecurity.com/" target="_blank">VGS
 
 ### Step 3
 
-Development domain: https://facebook.github.io/react-native/docs/getting-started
 
-#### Installing dependencies
-
-**Node & Watchman**:
-```
-brew install node
-brew install watchman
-```
-**Java Development Kit**:
-```
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
-```
-
-**Android development environment**:
-- Android SDK
-- Android SDK Platform
-- Performance (Intel ® HAXM) (See here for AMD)
-- Android Virtual Device
+> **_NOTE:_** Please visit React Native <a href="https://reactnative.dev/docs/environment-setup" target="_blank">documentation</a>
+> for more detailed explanation how to setup environment.</br>
 
 
-**Configure the ANDROID_HOME environment variable**:
-```
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-```
 **Specify Android SDK directory**
 
 Create `local.properties` file in `~/vgs-collect-show-android-react-native-demo/android` folder and specify `sdk.dir` property.
@@ -87,7 +62,16 @@ Setup `"<VAULT_ID>"`.
 
 ### Step 5
 
-Running the project
+
+> **_NOTE:_** Please visit React Native <a href="https://reactnative.dev/docs/running-on-device" target="_blank">documentation</a>
+> to read how to run the application on a device.</br>
+
+#### Running the project with script
+
+This step is not mandatory but helpful.
+
+You could use script to make integration process faster. The script helps to avoid some popular issues and run application on a device.
+
 - Open a Terminal and go to the project directory.
 - If this is first start - run ``npm install`` command.
 - Run `restart.sh` script to clear cache and build project on emulator.
@@ -96,7 +80,7 @@ Running the project
 
 ### Step 6
 
-Submit and reveal the form then go to the Logs tab on a Dashboard find a request and secure a payload.
+Submit and reveal the form then go to the Logs tab on a Dashboard, find a request and secure a payload.
 Instruction for this step you can find <a href="https://www.verygoodsecurity.com/docs/getting-started/quick-integration#securing-inbound-connection" target="_blank">here</a>.
 
 
