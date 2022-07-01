@@ -74,7 +74,7 @@ You could use script to make integration process faster. The script helps to avo
 
 - Open a Terminal and go to the project directory.
 - If this is first start - run ``npm install`` command.
-- Run `react-native run-android`
+- Run `npx react-native run-android`
 
 
 ### Step 6
