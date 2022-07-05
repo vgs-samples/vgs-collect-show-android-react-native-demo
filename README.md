@@ -74,8 +74,7 @@ You could use script to make integration process faster. The script helps to avo
 
 - Open a Terminal and go to the project directory.
 - If this is first start - run ``npm install`` command.
-- Run `restart.sh` script to clear cache and build project on emulator.
-- Make sure you have ``assets`` folder created here ``/android/app/src/main/assets``
+- Run `npx react-native run-android`
 
 
 ### Step 6
