@@ -184,7 +184,7 @@ dependencies {
     implementation "com.facebook.react:react-native:+"
 
     // VGS Collect
-    implementation 'com.verygoodsecurity:vgscollect:1.6.19'
+    implementation 'com.verygoodsecurity:vgscollect:1.7.0'
     implementation 'com.verygoodsecurity:adapter-cardio:1.0.2'
 
     // VGS Show
