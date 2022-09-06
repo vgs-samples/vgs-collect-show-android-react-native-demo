@@ -123,6 +123,8 @@ export default class App extends  Component<Props> {
                         style={styles.showField}
                         hint={'Card Number'}
                         contentPath={'json.payment_card_number'}
+                        transformationRegex={'(\\d{4})(\\d{4})(\\d{4})(\\d{4})'}
+                        transformationReplacement={'$1-$2-$3-$4'}
                         corners={12}
                         fontSize={12}
                         padding={3}
