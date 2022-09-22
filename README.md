@@ -1,3 +1,8 @@
+> **_NOTE:_** Check our new ReactNative Demo App with VGS Collect and VGS Show SDKs [here](https://github.com/vgs-samples/vgs-collect-show-react-native-demo).
+
+
+
+
 # VGS Collect/Show SDK. React Native Demo.
 
 <p align="center">
